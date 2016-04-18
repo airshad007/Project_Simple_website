@@ -4,11 +4,16 @@
     <head>
         <title>Cascading Menus</title>
         <meta charset="utf-8">
-        <meta name="author" content="Aamir Irshad">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     </head>
     <body>
         <div id="clockDisplay" class="clockStyle"></div>
+       
+
+        
+
+
         <script type="text/javascript" language="javascript">
         function renderTime(){
             var currentTime = new Date();
@@ -52,15 +57,38 @@
             <li><a href="Scedule_pickup.html">Schedule Pickup</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
-        <div id="indexBody">
-            <div class="img-index">
-                <img id="Indeximg" src="images/cupcake_logo.png" alt="cupcake logo">
+        
+            <div id = "myCarousel" class ="Carousel">
+            <ol class = "carousel-indicators">
+                <li data-target = "#myCarousel" data-slide-to = "0" class ="active"> </li>
+                <li data-target = "#myCarousel" data-slide-to = "1" > </li>
+                <li data-target = "#myCarousel" data-slide-to = "2" > </li>
+            </ol>
+
+            <div class ="carousel-inner">
+                <div class ="item-active">
+                    <img src="images/cupcake_1.jpg" alt="cupcake1" class="img-responsive">
+                </div>
+
+                <div class ="item">
+                    <img src="images/cupcake_2.jpg" alt="cupcake2" class="img-responsive">            
+                </div>
+
             </div>
-            <div id="tabPanelIndex">
-                <p><strong>Cupcakes</strong> evovled in the USA in the 19th century. 
-                    Simply put it is a cake baked in cups.</p>
-                <p>Cupcakes have become more than a trend over the years. They have become an industry.</p>
-            </div>
+
+        
+
+        <a class ="carousel-control left" href = "#myCarousel" data-slide="prev">
+            <span class ="icon-prev"></span>
+        </a>
+
+        <a class ="carousel-control right" href = "#myCarousel" data-slide="next">
+            <span class ="icon-next"></span>
+        </a>
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
         </div>
     </body>
 </html>
