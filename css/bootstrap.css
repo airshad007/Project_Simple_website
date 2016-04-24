@@ -554,13 +554,22 @@ th {
 }
 body{
     font-family: verdana;
-    background-color: #ABC;
+    background-color: yellow;
     padding: : 50px;
 }
+
 h1{
-    text-align: center;
-    border-bottom: 2px solid #009;
-    margin-bottom: 50px;
+    left:auto;
+    position: relative;
+    width: 500px;
+    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: normal;
+    font-size: 1.75em;
+	letter-spacing: .2em;
+	line-height: 1.1em;
+	margin:0px;
+	text-align: center;
+	text-transform: uppercase;
 
 }
 ul#navmenu, ul.sub1{
@@ -600,7 +609,7 @@ ul#navmenu ul.sub1{
     display: none;
     position: absolute;
     top: 26px;
-    left: 0px;
+    left: 1px;
 }
 ul#navmenu li:hover .sub1{
     display: block;
@@ -6594,27 +6603,34 @@ button.close {
   width: 100%;
 }
 .carousel-inner > .next {
-  left: 100%;
+  left: 50%;
 }
 .carousel-inner > .prev {
-  left: -100%;
+  left: -50%;
 }
 .carousel-inner > .next.left,
 .carousel-inner > .prev.right {
   left: 0;
 }
 .carousel-inner > .active.left {
-  left: -100%;
+  left: -50%;
 }
 .carousel-inner > .active.right {
-  left: 100%;
+  left: 50%;
+}
+
+#myCarousel{
+   position: relative;
+   margin: 0 auto;
+   top: 38px;
+   width: 50%;
 }
 .carousel-control {
   position: absolute;
-  top: 0;
+  top: 38px;
   bottom: 0;
   left: 0;
-  width: 15%;
+  width: 6%;
   font-size: 20px;
   color: #fff;
   text-align: center;
@@ -6624,6 +6640,8 @@ button.close {
   opacity: .5;
 }
 .carousel-control.left {
+  right: 100%;
+  left: auto;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
@@ -6632,8 +6650,8 @@ button.close {
   background-repeat: repeat-x;
 }
 .carousel-control.right {
-  right: 0;
-  left: auto;
+  right: auto;
+  left: 100%;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
@@ -7049,4 +7067,24 @@ button.close {
     display: none !important;
   }
 }
+    
+#myCarousel .item{
+    margin: 0 auto;
+    top: 10px;
+    height: 600px;
+    width: 1000px;
+}
+    
+#tabPanelIndex {
+    margin: 50px 420px;
+    height: 600px;
+    width: 1000px;
+    font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */

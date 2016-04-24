@@ -22,7 +22,7 @@ ul#navmenu li{
     width: 125px;
     text-align: center;
     position: relative;
-    float: left;
+    float: center;
     margin-right: 4px;
 }
 ul#navmenu a{
@@ -284,4 +284,35 @@ ul#navmenu li:hover .sub1{
 
 #calender-dates>tables>tr>td{
     padding: 5px;
+}
+
+#myCarousel .item{
+    background: transparent;
+    margin: 0 auto;
+    position: relative;
+    cursor: auto;
+    z-index: auto !important;
+    top: 10px;
+    height: 600px;
+    width: 1000px;
+}
+
+.carousel-control {
+    top:50%;
+    width:auto;
+    height:1em;
+    background:transparent;
+    position: absolute;
+    }
+    
+#tabPanelIndex {
+    top: 10px;
+    height: 600px;
+    width: 1000px;
+    font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
 }
