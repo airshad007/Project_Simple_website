@@ -1,0 +1,318 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: verdana;
+    background-color: #ABC;
+    padding: : 50px;
+}
+h1{
+    text-align: center;
+    border-bottom: 2px solid #009;
+    margin-bottom: 50px;
+
+}
+ul#navmenu, ul.sub1{
+    list-style-type: none;
+    font-size: 9pt;
+}
+ul#navmenu li{
+    border: 1px solid red;
+    width: 125px;
+    text-align: center;
+    position: relative;
+    float: center;
+    margin-right: 4px;
+}
+ul#navmenu a{
+    text-decoration: none;
+    display: block;
+    width: 125px;
+    height: 25px;
+    line-height: 25px;
+    background-color: aqua;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+ul#navmenu .sub1 li{
+}
+ul#navmenu .sub1 a{
+    margin-top: 3px;
+}
+ul#navmenu li:hover > a{
+    background-color: #CFC
+}
+ul#navmenu li:hover a:hover {
+    background-color: #FF0;
+}
+ul#navmenu ul.sub1{
+    display: none;
+    position: absolute;
+    top: 26px;
+    left: 0px;
+}
+ul#navmenu li:hover .sub1{
+    display: block;
+}
+.darrow {
+    font-size: 8pt;
+    position: absolute;
+    top: 7px;
+    right: 4px
+}
+
+/* Gallery page css */
+.gallery-box{
+    height: 720px;
+    width: 600px;
+    overflow: hidden;
+    padding:  80px 0px;
+    border-radius: 10px;
+    clear: both;
+}
+.img-single{
+    width: 284px;
+    height: 177px;
+    margin: 10px 5px;
+    float: left;
+    position: relative;
+}
+.img-single img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+.img-single:hover{
+    z-index: 1000;
+}
+.img-single img:hover{
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+}
+
+/* About page css */
+#AboutBody{
+    width: 284px;
+    height: 177px;
+    float: left;
+    margin: 21px;
+    clear: both;
+}
+#tabPanel2{
+    width: 350px;
+    height: 350px;
+    float: left;
+    margin: 5px;
+}
+.img-about Aboutimg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+/* Index page css */
+#indexBody{
+    width: 600px;
+    height: 511px;
+    float: left;
+    margin: 21px;
+    clear: both;
+}
+.img-index Indeximg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+#tabPanelIndex{
+    width: 350px;
+    height: 350px;
+    float: left;
+    margin: 5px;
+}
+
+/* Contact page css */
+
+.form-box{
+    width: 100%;
+    padding:  80px 0px;
+}
+
+.form-box h2{
+    width: 14%;
+    margin: 5px;
+}
+
+.form-box form input{
+    width: 40%;
+    height: 30px;
+    padding: 0px 0.5%;
+    border: 1px solid #CCC;
+    font-size: 16px;
+    color: #2828228;
+    font-family: Lato;
+    margin: 5px;
+}
+
+.form-radio{
+    width: 1.5% !important;
+    height: 2px;
+    padding: 0px 0.5%;
+    border: 0px solid #CCC;
+    float: left;
+    clear: both;
+    margin: 5px;
+}
+
+.genderName{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.form-box form textarea{
+    clear: both;
+    width: 60%;
+    height: 300px;
+    margin-bottom: 4px;
+    padding: 6px 0.5%;
+    border: 1px solid #CCC;
+    font-size: 16px;
+    color: #2828228;
+    font-family: Lato;
+    resize: none;
+    float: left;
+    margin: 5px;
+}
+
+.form-box form button{
+    clear: both;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 4px;
+    padding: 0px 0.5%;
+    border: 1px solid #CCC;
+    font-size: 16px;
+    color: #fff;
+    font-family: Lato;
+    text-transform: uppercase;
+    float: left;
+    margin: 5px;
+
+}
+/* Choclate cake page css */
+
+#recipeBody{
+    clear: both;
+}
+
+#Recipeimg{
+    clear: both;
+    width: 30%;
+    height: 30%;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 5px;
+}
+
+#recipeBody ul {
+    list-style: none;
+}
+
+#recipeBody ul li:before {
+    content: "\2023";
+}
+
+.ingredients {
+     margin: 5px;
+}
+
+.directions {
+     margin: 5px;
+}
+
+.clockStyle{
+    background-color: #000;
+    border: #999 2px inset;
+    padding: 6px;
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline;
+    float: right;
+}
+
+#calender-container{
+    padding: 10px;
+    width: 210px;
+    height: 210px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial;
+    background-image: linear-gradient(#fff, #d3d3d3);
+}
+
+#calender-container>div{
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#calender-month-year{
+    margin: 5px;
+}
+
+#calender-dates>tables>tr>td{
+    padding: 5px;
+}
+
+#myCarousel .item{
+    background: transparent;
+    margin: 0 auto;
+    position: relative;
+    cursor: auto;
+    z-index: auto !important;
+    top: 10px;
+    height: 600px;
+    width: 1000px;
+}
+
+.carousel-control {
+    top:50%;
+    width:auto;
+    height:1em;
+    background:transparent;
+    position: absolute;
+    }
+    
+#tabPanelIndex {
+    top: 10px;
+    height: 600px;
+    width: 1000px;
+    font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}

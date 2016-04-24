@@ -4,8 +4,8 @@
     <head>
         <title>Cascading Menus</title>
         <meta charset="utf-8">
-        <meta name="author" content="Aamir Irshad">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     </head>
     <body>
         <div id="clockDisplay" class="clockStyle"></div>
@@ -52,15 +52,43 @@
             <li><a href="Scedule_pickup.html">Schedule Pickup</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
-        <div id="indexBody">
-            <div class="img-index">
-                <img id="Indeximg" src="images/cupcake_logo.png" alt="cupcake logo">
+        <div id = "myCarousel" class ="carousel slide" data-ride="carousel">
+            <ol class = "carousel-indicators">
+                <li data-target = "#myCarousel" data-slide-to = "0" class ="active"> </li>
+                <li data-target = "#myCarousel" data-slide-to = "1" > </li>
+                <li data-target = "#myCarousel" data-slide-to = "2" > </li>
+                <li data-target = "#myCarousel" data-slide-to = "3" > </li>
+            </ol>
+
+            <div class ="carousel-inner" role="listbox">
+                <div class ="item active" id="slide1">
+                    <img src="images/cupcake_2.jpg" alt="cupcake2" class="img-responsive">            
+                </div>
+                <div class ="item" id="slide2">
+                    <img src="images/cupcake_5.jpg" alt="cupcake3" class="img-responsive">            
+                </div>
+                <div class ="item" id="slide3">
+                    <img src="images/cupcake_3.jpg" alt="cupcake4" class="img-responsive">            
+                </div>
+                <div class ="item" id="slide3">
+                    <img src="images/cupcake_7.jpg" alt="cupcake4" class="img-responsive">            
+                </div>
             </div>
-            <div id="tabPanelIndex">
-                <p><strong>Cupcakes</strong> evovled in the USA in the 19th century. 
+            
+            <a class ="carousel-control left" href = "#myCarousel" role="button" data-slide="prev">
+                <span class ="icon-prev"></span>
+            </a>
+
+            <a class ="carousel-control right" href = "#myCarousel" role="button" data-slide="next">
+                <span class ="icon-next"></span>
+            </a>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script src="js/bootstrap.js"></script>
+        </div>
+        <div id="tabPanelIndex">
+            <p><strong>Cupcakes</strong> evovled in the USA in the 19th century. 
                     Simply put it is a cake baked in cups.</p>
-                <p>Cupcakes have become more than a trend over the years. They have become an industry.</p>
-            </div>
+            <p>Cupcakes have become more than a trend over the years. They have become an industry.</p>
         </div>
     </body>
 </html>
