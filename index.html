@@ -8,87 +8,89 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     </head>
     <body>
-        <div id="clockDisplay" class="clockStyle"></div>
-        <script type="text/javascript" language="javascript">
-        function renderTime(){
-            var currentTime = new Date();
-            var diem = "AM";
-            var h = currentTime.getHours();
-            var m = currentTime.getMinutes();
-            var s = currentTime.getSeconds();
-            
-            if(h == 0){
-                h = 12;
-            }else if(h > 12){
-                h = h - 12;
-                diem = "PM";
-            }
-            if(h < 10){
-                h = "0" + h;
-            }
-            if(m < 10){
-                m = "0" + m;
-            }
-            if(s < 10){
-                s = "0" + s;
-            }
-            var myClock = document.getElementById("clockDisplay");
-            myClock.textContent = h + ":" + m + ":" + s + " " + diem; 
-            myClock.innerHTML = h + ":" + m + ":" + s + " " + diem;
-            setTimeout('renderTime()', 1000);
-        }
-        renderTime();    
-        </script>
-        <h1>Cupcakes</h1>
-        <ul id="navmenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Recipes</a><span class="darrow">&#9660;</span>
-                <ul class="sub1">
-                   <li><a href="chocolate-cake.html">Chocolate ganache</a></li>
-                </ul>
-            </li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="Scedule_pickup.html">Schedule Pickup</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-        <div id = "myCarousel" class ="carousel slide" data-ride="carousel">
-            <ol class = "carousel-indicators">
-                <li data-target = "#myCarousel" data-slide-to = "0" class ="active"> </li>
-                <li data-target = "#myCarousel" data-slide-to = "1" > </li>
-                <li data-target = "#myCarousel" data-slide-to = "2" > </li>
-                <li data-target = "#myCarousel" data-slide-to = "3" > </li>
-            </ol>
+        <div id="mainBody">
+            <div id="clockDisplay" class="clockStyle"></div>
+            <script type="text/javascript" language="javascript">
+            function renderTime(){
+                var currentTime = new Date();
+                var diem = "AM";
+                var h = currentTime.getHours();
+                var m = currentTime.getMinutes();
+                var s = currentTime.getSeconds();
 
-            <div class ="carousel-inner" role="listbox">
-                <div class ="item active" id="slide1">
-                    <img src="images/cupcake_2.jpg" alt="cupcake2" class="img-responsive">            
+                if(h == 0){
+                    h = 12;
+                }else if(h > 12){
+                    h = h - 12;
+                    diem = "PM";
+                }
+                if(h < 10){
+                    h = "0" + h;
+                }
+                if(m < 10){
+                    m = "0" + m;
+                }
+                if(s < 10){
+                    s = "0" + s;
+                }
+                var myClock = document.getElementById("clockDisplay");
+                myClock.textContent = h + ":" + m + ":" + s + " " + diem; 
+                myClock.innerHTML = h + ":" + m + ":" + s + " " + diem;
+                setTimeout('renderTime()', 1000);
+            }
+            renderTime();    
+            </script>
+            <h1>Cupcakes</h1>
+            <ul id="navmenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Recipes</a><span class="darrow">&#9660;</span>
+                    <ul class="sub1">
+                       <li><a href="chocolate-cake.html">Chocolate ganache</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Scedule_pickup.html">Schedule Pickup</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div id = "myCarousel" class ="carousel slide" data-ride="carousel">
+                <ol class = "carousel-indicators">
+                    <li data-target = "#myCarousel" data-slide-to = "0" class ="active"> </li>
+                    <li data-target = "#myCarousel" data-slide-to = "1" > </li>
+                    <li data-target = "#myCarousel" data-slide-to = "2" > </li>
+                    <li data-target = "#myCarousel" data-slide-to = "3" > </li>
+                </ol>
+
+                <div class ="carousel-inner" role="listbox">
+                    <div class ="item active" id="slide1">
+                        <img src="images/cupcake_2.jpg" alt="cupcake2" class="img-responsive">            
+                    </div>
+                    <div class ="item" id="slide2">
+                        <img src="images/cupcake_5.jpg" alt="cupcake3" class="img-responsive">            
+                    </div>
+                    <div class ="item" id="slide3">
+                        <img src="images/cupcake_3.jpg" alt="cupcake4" class="img-responsive">            
+                    </div>
+                    <div class ="item" id="slide3">
+                        <img src="images/cupcake_7.jpg" alt="cupcake4" class="img-responsive">            
+                    </div>
                 </div>
-                <div class ="item" id="slide2">
-                    <img src="images/cupcake_5.jpg" alt="cupcake3" class="img-responsive">            
-                </div>
-                <div class ="item" id="slide3">
-                    <img src="images/cupcake_3.jpg" alt="cupcake4" class="img-responsive">            
-                </div>
-                <div class ="item" id="slide3">
-                    <img src="images/cupcake_7.jpg" alt="cupcake4" class="img-responsive">            
-                </div>
+
+                <a class ="carousel-control left" href = "#myCarousel" role="button" data-slide="prev">
+                    <span class ="icon-prev"></span>
+                </a>
+
+                <a class ="carousel-control right" href = "#myCarousel" role="button" data-slide="next">
+                    <span class ="icon-next"></span>
+                </a>
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src="js/bootstrap.js"></script>
             </div>
-            
-            <a class ="carousel-control left" href = "#myCarousel" role="button" data-slide="prev">
-                <span class ="icon-prev"></span>
-            </a>
-
-            <a class ="carousel-control right" href = "#myCarousel" role="button" data-slide="next">
-                <span class ="icon-next"></span>
-            </a>
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-            <script src="js/bootstrap.js"></script>
-        </div>
-        <div id="tabPanelIndex">
-            <p><strong>Cupcakes</strong> evovled in the USA in the 19th century. 
-                    Simply put it is a cake baked in cups.</p>
-            <p>Cupcakes have become more than a trend over the years. They have become an industry.</p>
+            <article class="cupcale-article">
+                <p><strong>Cupcakes</strong> evovled in the USA in the 19th century. 
+                        Simply put it is a cake baked in cups.</p>
+                <p>Cupcakes have become more than a trend over the years. They have become an industry.</p>
+            </article>
         </div>
     </body>
 </html>

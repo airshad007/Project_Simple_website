@@ -7068,16 +7068,23 @@ button.close {
   }
 }
     
+#mainBody{
+    
+}
+
 #myCarousel .item{
     margin: 0 auto;
     top: 10px;
     height: 600px;
     width: 1000px;
+    z-index: 1;
 }
-    
-#tabPanelIndex {
-    margin: 50px 420px;
-    height: 600px;
+
+.cupcale-article {
+    margin: 0 auto;
+    top: 40px;
+    display: block;
+    position: relative;
     width: 1000px;
     font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
 	font-size: 24px;
@@ -7085,6 +7092,8 @@ button.close {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
+    z-index: 2;
 }
+
 
 /*# sourceMappingURL=bootstrap.css.map */
